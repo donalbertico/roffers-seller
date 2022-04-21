@@ -1,0 +1,32 @@
+{
+  "staging": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-roffers-staging-223251-authRole",
+      "UnauthRoleArn": "arn:aws:iam::047017216594:role/amplify-roffers-staging-223251-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::047017216594:role/amplify-roffers-staging-223251-authRole",
+      "Region": "eu-west-2",
+      "DeploymentBucketName": "amplify-roffers-staging-223251-deployment",
+      "UnauthRoleName": "amplify-roffers-staging-223251-unauthRole",
+      "StackName": "amplify-roffers-staging-223251",
+      "StackId": "arn:aws:cloudformation:eu-west-2:047017216594:stack/amplify-roffers-staging-223251/03ead430-a579-11ec-b702-068e919b3da4",
+      "AmplifyAppId": "d3j5d46amdikxf",
+      "APIGatewayAuthURL": "https://s3.amazonaws.com/amplify-roffers-staging-223251-deployment/amplify-cfn-templates/api/APIGatewayAuthStack.json"
+    },
+    "categories": {
+      "function": {
+        "createSeller": {
+          "deploymentBucketName": "amplify-roffers-staging-223251-deployment",
+          "s3Key": "amplify-builds/createSeller-6c666c2f33626341494b-build.zip"
+        },
+        "createSellerProfile": {
+          "deploymentBucketName": "amplify-roffers-staging-223251-deployment",
+          "s3Key": "amplify-builds/createSellerProfile-4d664958436e6335574e-build.zip"
+        }
+      },
+      "auth": {
+        "roffers": {},
+        "true": {}
+      }
+    }
+  }
+}

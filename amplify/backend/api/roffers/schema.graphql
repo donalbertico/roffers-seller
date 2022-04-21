@@ -1,0 +1,14 @@
+type Offer @model @auth(rules: [{allow : public, operations: [read]},{allow: owner, operations: [create, read, update]},{allow: groups, groups: ["admin"]}]) {
+  id: ID!
+  sellerID: ID! @index(name: "bySeller")
+  expires: AWSDateTime
+  owner: String! @index(name: "byOwner", queryField: "OfferByOwner")
+}
+
+type Seller @model @auth(rules: [{allow: groups, groups: ["admin"], operations: [read, create, update, delete]}, {allow: owner, operations: [read, update]}, {allow : public, operations: [read]}]) {
+  id: ID!
+  name: String!
+  Offers: [Offer] @hasMany(indexName: "bySeller", fields: ["id"])
+  owner: String! @index(name: "byOwner", queryField: "SellerByOwner")
+  verified: Boolean
+}

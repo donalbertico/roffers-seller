@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "auth": {
+      "roffers": [
+        "create"
+      ]
+    },
+    "storage": {
+      "Seller:@model(appsync)": [
+        "create"
+      ]
+    }
+  },
+  "lambdaLayers": []
+}

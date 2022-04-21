@@ -1,0 +1,24 @@
+{
+  "permissions": {
+    "auth": {
+      "roffers": [
+        "create",
+        "read"
+      ]
+    },
+    "api": {
+      "roffers": [
+        "Mutation"
+      ]
+    },
+    "storage": {
+      "Offer:@model(appsync)": [
+        "create"
+      ],
+      "Seller:@model(appsync)": [
+        "create"
+      ]
+    }
+  },
+  "lambdaLayers": []
+}

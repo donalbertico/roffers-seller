@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "paths": {
+    "/seller/create": {
+      "name": "/seller/create",
+      "lambdaFunction": "createSeller",
+      "permissions": {
+        "setting": "private",
+        "auth": [
+          "create"
+        ]
+      }
+    }
+  }
+}
